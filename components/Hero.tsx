@@ -83,11 +83,28 @@ export default function Hero() {
               </a>
             </motion.div>
 
+            {/* Mobile image */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="mt-10 lg:hidden rounded-2xl overflow-hidden shadow-xl"
+            >
+              <Image
+                src="/images/center.jpeg"
+                alt="Подологический центр Алевтины Лигай — Алматы"
+                width={600}
+                height={400}
+                sizes="100vw"
+                className="object-cover w-full h-56 sm:h-72"
+              />
+            </motion.div>
+
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4"
+              className="mt-8 lg:mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4"
             >
               {stats.map(({ icon: Icon, key }, i) => (
                 <motion.div
@@ -120,7 +137,7 @@ export default function Hero() {
                 width={600}
                 height={800}
                 className="object-cover w-full h-[600px]"
-                sizes="(max-width: 1024px) 0px, 50vw"
+                sizes="50vw"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
