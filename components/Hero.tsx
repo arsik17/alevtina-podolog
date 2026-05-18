@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#F5EBE8] via-[#FBF8F5] to-[#EDE4DF]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FFF0F0] via-[#FFF9F9] to-[#FFF5F0]" />
 
       {/* Decorative blobs */}
       <div className="absolute top-20 right-[10%] w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
@@ -115,11 +115,12 @@ export default function Hero() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/alevtina-portrait.jpg"
-                alt="Алевтина Лигай — основатель подологического центра"
+                src="/images/center.jpeg"
+                alt="Подологический центр Алевтины Лигай — Алматы"
                 width={600}
-                height={900}
+                height={800}
                 className="object-cover w-full h-[600px]"
+                sizes="(max-width: 1024px) 0px, 50vw"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />

@@ -32,7 +32,6 @@ export default function About() {
               <p>{t.about.p2}</p>
               <p>{t.about.p3}</p>
             </div>
-            <p className="mt-6 text-sm text-primary font-medium">{t.about.license}</p>
 
             {/* Features */}
             <div className="mt-8 grid grid-cols-2 gap-4">
@@ -62,6 +61,7 @@ export default function About() {
                     alt="Интерьер подологического центра"
                     width={400}
                     height={500}
+                    sizes="(max-width: 1024px) 50vw, 25vw"
                     className="object-cover w-full h-64"
                   />
                 </div>
@@ -71,6 +71,7 @@ export default function About() {
                     alt="Стерильные инструменты"
                     width={400}
                     height={300}
+                    sizes="(max-width: 1024px) 50vw, 25vw"
                     className="object-cover w-full h-48"
                   />
                 </div>
@@ -82,6 +83,7 @@ export default function About() {
                     alt="Немецкая продукция для подологии"
                     width={400}
                     height={300}
+                    sizes="(max-width: 1024px) 50vw, 25vw"
                     className="object-cover w-full h-48"
                   />
                 </div>
@@ -91,6 +93,7 @@ export default function About() {
                     alt="Подологический центр Алевтины — вход"
                     width={400}
                     height={500}
+                    sizes="(max-width: 1024px) 50vw, 25vw"
                     className="object-cover w-full h-64"
                   />
                 </div>

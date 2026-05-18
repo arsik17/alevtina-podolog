@@ -51,6 +51,7 @@ export default function Training() {
                   alt="Обучение подологии — группа студентов"
                   width={800}
                   height={500}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover w-full h-72"
                 />
               </div>
@@ -61,6 +62,7 @@ export default function Training() {
                     alt="Команда на профессиональной конференции"
                     width={400}
                     height={300}
+                    sizes="(max-width: 1024px) 50vw, 25vw"
                     className="object-cover w-full h-48"
                   />
                 </div>
@@ -70,6 +72,7 @@ export default function Training() {
                     alt="Команда подологического центра"
                     width={400}
                     height={300}
+                    sizes="(max-width: 1024px) 50vw, 25vw"
                     className="object-cover w-full h-48"
                   />
                 </div>

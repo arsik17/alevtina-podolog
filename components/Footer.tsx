@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useI18n } from "@/lib/i18n";
 import { cityData } from "@/lib/city";
 import { Phone, MapPin } from "lucide-react";
@@ -16,14 +17,12 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#2D2A32] text-white/80">
+    <footer className="bg-[#2D2A2A] text-white/80">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <span className="font-[family-name:var(--font-heading)] text-xl font-bold text-white tracking-wide">
-              ALEVTINA
-            </span>
+            <Image src="/images/logo.png" alt="Alevtina" width={140} height={40} className="h-9 w-auto brightness-0 invert" />
             <p className="mt-4 text-sm leading-relaxed text-white/60">{t.footer.desc}</p>
             <a
               href="https://instagram.com/alevtina_podolog.center"
@@ -85,8 +84,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/40">{t.footer.license}</p>
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <p className="text-xs text-white/40">
             &copy; {new Date().getFullYear()} Alevtina Podolog Center. {t.footer.rights}.
           </p>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { useI18n } from "@/lib/i18n";
 import { useBooking } from "./BookingModal";
 import { Menu, X } from "lucide-react";
@@ -43,8 +44,8 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between gap-4">
           {/* Logo */}
-          <a href="#" className="font-[family-name:var(--font-heading)] text-xl font-bold text-primary tracking-wide flex-shrink-0">
-            ALEVTINA
+          <a href="#" className="flex-shrink-0">
+            <Image src="/images/logo.png" alt="Alevtina" width={140} height={40} className="h-9 w-auto" priority />
           </a>
 
           {/* Desktop nav */}
