@@ -54,7 +54,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 text-lg text-text-muted max-w-xl leading-relaxed"
+              className="mt-6 text-lg text-text-muted max-w-xl leading-relaxed whitespace-pre-line"
             >
               {t.hero.subtitle}
             </motion.p>

@@ -26,11 +26,11 @@ export default function Pricing() {
             {t.pricing.items.map((item, i) => (
               <div
                 key={i}
-                className={`flex items-center justify-between px-6 py-4 ${
+                className={`flex items-center justify-between px-4 sm:px-6 py-4 ${
                   i !== t.pricing.items.length - 1 ? "border-b border-divider" : ""
                 } hover:bg-bg/50 transition-colors`}
               >
-                <span className="text-text font-medium">{item.service}</span>
+                <span className="text-sm sm:text-base text-text font-medium min-w-0">{item.service}</span>
                 <span className="text-primary font-semibold whitespace-nowrap ml-4">
                   {item.price} &#8376;
                 </span>

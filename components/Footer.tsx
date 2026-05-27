@@ -23,7 +23,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image src="/images/logo.png" alt="Alevtina" width={140} height={40} className="h-9 w-auto brightness-0 invert" />
-            <p className="mt-4 text-sm leading-relaxed text-white/60">{t.footer.desc}</p>
+            <p className="mt-4 text-sm leading-relaxed text-white/60 whitespace-pre-line">{t.footer.desc}</p>
             <a
               href="https://instagram.com/alevtina_podolog.center"
               target="_blank"

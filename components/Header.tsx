@@ -36,6 +36,7 @@ export default function Header() {
   }, [mobileOpen]);
 
   return (
+    <>
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-white/90 backdrop-blur-lg shadow-sm" : "bg-white/60 backdrop-blur-md"
@@ -123,9 +124,11 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile menu overlay */}
+    </header>
+
+      {/* Mobile menu overlay — outside header to avoid backdrop-blur stacking context */}
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-16 bg-white z-40 overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 top-16 bg-white z-[60] overflow-y-auto">
           <div className="px-6 py-6 space-y-1">
             {navItems.map((item) => (
               <a
@@ -148,6 +151,6 @@ export default function Header() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
