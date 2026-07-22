@@ -35,7 +35,7 @@ const ru = {
   },
   services: {
     tag: "Услуги",
-    title: "Что мы лечим и как помогаем",
+    title: "С чем мы работаем",
     items: {
       pedicure: {
         title: "Аппаратный педикюр",
